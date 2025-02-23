@@ -1,0 +1,131 @@
+.mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.mywork-title{
+    position: relative;
+}
+
+.mywork-title h1{
+    padding: 0 30px;
+    font-size: 60px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #B0C4DE, #00FFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mywork-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.mywork-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.project-format{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 419px;
+    height: 250px;
+    transition: 0.3s;
+    /* cursor: pointer; */
+    border: 4px solid rgb(59, 126, 130);
+    border-radius: 10px;
+}
+
+.project-format p{
+    margin-bottom: 10px;
+}
+
+.project-format:hover{
+    box-shadow: 3px 3px 3px rgba(247, 247, 247, 0.978);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.mywork-showmore{
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 30px 60px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.mywork-showmore:hover{
+    gap: 30px;
+    transition: 0.6s;
+}
+
+.project-container {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #000000;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+}
+
+
+@media(max-width:768px){
+    .mywork{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .mywork-title h1{
+        font-size: 40px;
+        font-weight: 600;
+        padding: 0;
+    }
+    .mywork-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .mywork-container img{
+        width: 100%;
+        height: 100%;
+    }
+    .mywork-showmore{
+        padding: 20px 40px;
+        font-size: 18px;
+        margin: 50px auto;
+        cursor: pointer;
+    }
+    .project-container p{
+        gap: 10px;
+        padding: 32px;
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+}

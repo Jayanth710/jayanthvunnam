@@ -1,0 +1,70 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 200px;
+}
+
+.education-title{
+    align-self: center;
+}
+
+.education-title h1{
+    padding: 0px 10px;
+    font-size: 60px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #B0C4DE, #00FFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.education-details{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.education-detail{
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.education-detail img{
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.education-detail:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.education-item{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 768px){
+    .education{
+        gap: 30px;
+        margin: 50px 70px;
+        align-items: start;
+
+    }
+    .education-title h1{
+        font-size: 40px;
+        padding: 0;
+    }
+    .education-details{
+        flex-direction: column;
+
+    }
+
+}
