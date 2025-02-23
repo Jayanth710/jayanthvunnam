@@ -16,7 +16,7 @@ function Sidebar(){
     return (
 
         <div className="sidebar">
-            <a href="/"><FaHome className="icon" /></a>
+            <a href="#"><FaHome className="icon" /></a>
             <a href="https://github.com/Jayanth710" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="icon" />
             </a>
