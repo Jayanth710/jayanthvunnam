@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import './Services.css'
+import './WorkExperience.css'
 import work_exp from '../../assets/work_exp'
 import arrow_icon from '../../assets/arrow_icon.svg'
 import { FaLaptopCode } from "react-icons/fa";
 
-function Services(){
+function Work(){
     const [expand, setExpand] = useState(null)
     return (
         <div id="projects" className="services">
@@ -33,4 +33,4 @@ function Services(){
     )
 }
 
-export default Services;
+export default Work;

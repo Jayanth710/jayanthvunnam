@@ -1,9 +1,9 @@
 import React from "react";
-import './Mywork.css'
+import './Projects.css'
 import project_data from '../../assets/project_data'
 import arrow_icon from '../../assets/arrow_icon.svg'
 
-function Mywork(){
+function Projects(){
     return (
         <div id="skills" className="mywork">
             <div className="mywork-title">
@@ -34,4 +34,4 @@ function Mywork(){
     )
 }
 
-export default Mywork;
+export default Projects;
